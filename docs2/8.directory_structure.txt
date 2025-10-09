@@ -1,0 +1,66 @@
+astro-image-colorizer/
+
+server/
+├── node_modules/
+├── data/
+│   └── history.log
+├── models_ai/
+│   ├── deep_sky_model.onnx
+│   └── palettes.json
+├── public/
+│   └── images/
+├── src/
+│   ├── api/
+│   │   ├── processRoutes.js
+│   │   └── historyRoutes.js
+│   │
+│   ├── controllers/
+│   │   ├── processController.js
+│   │   └── historyController.js
+│   │
+│   ├── services/
+│   │   ├── colorizationService.js
+│   │   └── historyService.js
+│   │
+│   ├── middleware/
+│   │   ├── uploadMiddleware.js
+│   │   └── errorHandler.js
+│   │
+│   ├── models/
+│   │   └── HistoryItem.js
+│   │
+│   └── utils/
+│       ├── fitsParser.js
+│       └── imageExporter.js
+│
+├── .env
+├── .gitignore
+├── index.js
+├── package.json
+└── package-lock.json
+
+
+
+frontend/
+├── public/
+│   └── index.html
+├── src/
+│   ├── api/
+│   │   └── apiClient.js
+│   ├── components/
+│   │   ├── ControlPanel.jsx
+│   │   ├── FileUpload.jsx
+│   │   ├── HistoryPanel.jsx
+│   │   └── ImageViewer.jsx
+│   ├── state/
+│   │   ├── imageStore.js
+│   │   └── historyStore.js
+│   ├── views/
+│   │   └── ColorizerView.jsx
+│   ├── App.jsx
+│   └── index.jsx
+├── tests/
+│   └── components/
+│       └── FileUpload.test.jsx
+├── package.json
+└── vite.config.js
